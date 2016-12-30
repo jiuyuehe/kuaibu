@@ -1,0 +1,59 @@
+<%include public/head.html%>
+<link href="/css/user_nav_plugins_v2.css" rel="stylesheet" />
+<script type="text/javascript" src="/js/validator.min.js"></script>
+
+<div class="user_plugins_wraper">
+    <div class="regbox">
+        <div class="reglist">
+            <form method="post" action="/cms/moduser" id='newUser'>
+                <ul>
+                    <h2>用户修改</h2>
+                    <li><span>用户名：</span><input type="text" name="username" disabled><span class="tip-text"></span></li>
+                    <li><span>登录密码：</span><input type="password" name="password"><span class="tip-text"></span></li>
+                    <li><span>确认密码：</span><input type="password" name="repassword"><span class="tip-text"></span></li>
+                    
+                </ul>
+                <ul>
+                    <h2>联系信息</h2>
+                    <li><span>联系人：</span><input type="text" name="name"><span class="tip-text"></span></li>
+                    <li><span>联系电话：</span><input type="text" name="phone"><span class="tip-text"></span></li>
+                    <li><span>QQ号码：</span><input type="text" name="qq"><span class="tip-text"></span></li>
+                    <li><span>电子邮箱：</span><input type="text" name="email"><span class="tip-text"></span></li>
+                    <li><span>通讯地址：</span><input type="text" name="address"><span class="tip-text"></span></li>
+                </ul>
+                <ul>
+                    <h2>财务信息</h2>
+                    <li><span>银行名称：</span>
+                        <select name="bank">
+                            <option value="农业银行">农业银行</option>
+                            <option value="中国银行">中国银行</option>
+                            <option value="工商银行">工商银行</option>
+                            <option value="建设银行">建设银行</option>
+                            <option value="交通银行">交通银行</option>
+                            <option value="邮政储蓄">邮政储蓄</option>
+                            <option value="招商银行">招商银行</option>
+                            <option value="中信银行">中信银行</option>
+                            <option value="民生银行">民生银行</option>
+                            <option value="兴业银行">兴业银行</option>
+                            <option value="光大银行">光大银行</option>
+                            <option value="浦发银行">浦发银行</option>
+                        </select>
+                        <span class="tip-text"></span>
+                    </li>
+                    <li><span>开户地址：</span><input type="text" name="bankadress"><span class="tip-text"></span></li>
+                    <li><span>收款姓名：</span><input type="text" name="cardname"><span class="tip-text"></span></li>
+                    <li><span>收款账号：</span><input type="text" name="bankcard"><span class="tip-text"></span></li>
+                </ul>
+                <ul>
+                    <li>
+                        <button  class="btn btn-primary btn-block" type="submit">修&nbsp;改</button>
+                    </li> 
+                </ul>
+          </form>
+        </div>
+    </div>
+</div>
+<link href="/css/page_center.css" rel="stylesheet" />
+<link rel="stylesheet" href="/public/css/login.css" nedia="screen" />
+</body>
+</html>

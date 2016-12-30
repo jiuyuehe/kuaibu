@@ -1,0 +1,164 @@
+/*css*/
+
+/*css reset*/
+body {
+	font-size: 12px;
+	margin: 0 auto;
+	padding: 0;
+	line-height: 120%;
+	color: #333;
+	font-family: "Microsoft YaHei","微软雅黑",SimSun,"宋体",Heiti,"黑体",sans-serif;
+	background: #f5f8fc;
+	min-width: 1300px;
+}
+
+ul,li,dl,dt,dd,ol,p {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+img,img a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+/*header*/
+.head {
+	width: 100%;
+	height: 90px;
+	background: #fff;
+	border-bottom: 0 solid #eee;
+	margin: 0 auto;
+}
+
+.head .logo {
+	width: 200px;
+	height: 50px;
+	background: url("../images/logo.png") 0 0 no-repeat;
+	float: left;
+	margin-top: 20px;
+	z-index: 99;
+}
+
+.head .logo a {
+	width: 200px;
+	height: 50px;
+	display: block;
+}
+
+ .wrap {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.center{}
+.center h2{height: 50px;line-height: 50px;font-size: 24px;float: left;margin-top: 30px;}
+.center span{height: 30px;line-height: 30px;font-size: 18px;float: left;margin-top: 42px;margin-left: 5px;}
+
+/*登录注册表格样式*/
+.login-main{width:24%;margin:8em auto 0;position: relative;background: #fff;padding: 2.5em;border-radius: 0.3em;box-shadow: 0px 0px 6px #dadada;}
+.login-main h1{font-size: 30px; line-height: 35px; font-weight: 600; color: #0186FE;width: 100%;text-align: center;margin:20px 0;}
+.login{}
+.login ul{}
+.login ul li{}
+.login ul li span{display: block;font-size: 16px; color: #333; font-weight: 500;padding:10px 0;}
+.login ul li input{padding: 9px;width: 93.4%;font-size: 1.1em; margin: 3px 0px 25px; color: #666666; background: #f0f0f0; border: none; font-weight: 600;outline: none;transition: all 0.3s ease-out;border-radius: 0.2em;}
+.vdcode{display: inline; margin:0 auto; }
+#vdcode{ width: 50%; }
+#vdimgck{ width:30%; padding-left: 10px; cursor: pointer;}
+.button{display: inline-block;font-size: 16px;font-weight: 400; line-height: 1.5; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; user-select: none; border: 0; border-radius: 4px; outline: 0!important; border-width: 0;padding:6px;width: 95%;margin-bottom: 40px;background: #0186FE;color: #fff;}
+
+.logfun{}
+.logfun .funleft{float: left;}
+.logfun .funright{float: right;}
+.logfun a{color:#0186FE; text-decoration: none;}
+.logfun a:hover{color:#0186FE; text-decoration: none;}
+
+.regbox{width:70%;margin:4em auto;position: relative;background: #fff;padding: 2.5em;border-radius: 0.3em;box-shadow: 0px 0px 6px #dadada;}
+.reglist{width:70%;padding-left: 25%;}
+.reglist ul{}
+.reglist ul h2{height:40px;line-height:40px;font-size: 25px;margin:10px 0;color:#0186FE;}
+.reglist ul li{width: 50%;}
+.reglist ul li span{display: block;font-size: 16px; color: #333; font-weight: 500;}
+.reglist ul li input{padding: 9px;width: 93.4%;font-size: 1.1em; margin: 3px 0px 25px; color: #666666; background: #f0f0f0; border: none; font-weight: 600;outline: none; transition: all 0.3s ease-out; border-radius: 0.2em;}
+.reglist ul li select{ width: 97%; padding: 9px; margin: 3px 0px 25px; font-size: 1.1em; line-height: 1.1; color: #666666;font-weight: 600; background-color: #f0f0f0; background-image: none; -webkit-background-clip: padding-box; background-clip: padding-box; border: 1px solid rgba(120,130,140,.2); border-radius: 0.2em;}
+option {font-weight: normal; display: block; padding: 0px 2px 1px; white-space: pre; min-height: 1.2em;}
+.keepline{position: relative;height: 35px;line-height: 35px;font-size: 12px; color: #222;cursor: pointer;text-align:left;}
+.keepline input{display: inline;width:30px!important;}
+.keepline p{display: inline;}
+.keepline a{display: inline;color:#0186FE;text-decoration:none; }
+.keepline a:hover{color:#0186FE;text-decoration:none; }
+
+.agreebox{width: 60%;margin:40px auto;}
+.custom_wraper_header{padding-top:40px;font-size:24px}
+.custom_wraper_body{border-top:1px solid #c8c8c8;margin-top:40px}
+.custom_wraper_body p{font-size:14px;display:block;margin-top:10px;color:#6f6f6f;line-height:24px}
+.custom_wraper_body h1{margin-top:10px;font-size:20px}
+.blank{margin-top:40px}
+.downmsg{width:100%;text-align: center;font-size: 14px;}
+.downmsg a{color:#0186FE; text-decoration: none;}
+.downmsg a:hover{color:#0186FE; text-decoration: none;}
+
+.confirmbtn{display: inline-block;font-size: 16px;font-weight: 400; line-height: 1.5; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; user-select: none; border: 0; border-radius: 4px; outline: 0!important; border-width: 0;padding:6px;width: 20%;margin-bottom: 40px;background: #0186FE;color: #fff;}
+
+.error{
+	color: #FF0000;
+}
+
+.notify-main{width:80%; margin:8em auto 0;position: relative;background: #fff;padding: 2.5em;border-radius: 0.3em;box-shadow: 0px 0px 6px #dadada;}
+.notify-main h1{font-size: 30px; font-weight: 600; color: #0186FE;width: 100%;text-align: center;margin:20px 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

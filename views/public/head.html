@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="Zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>快步网盟</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="/public/css/basestyle.css" nedia="screen" />
+<script type="text/javascript" src="/public/js/jquery.1.11.3.min.js"></script>
+</head>
+<body style="background:#fff!important;">
+<div class="head">
+    <div class="wrap">
+        <div class="logo"><a href="/"><img src="/public/images/mainlogo.png" /></a></div>
+        <div class="nav">
+            <ul>
+                <li><a href="/" class="active">网站首页</a></li>
+                <li><a href="/wm/product/">业务介绍</a></li>
+                <li><a href="/wm/newscenter/news/">通知公告</a></li>
+                <li><a href="/wm/qanda/">常见问题</a></li>
+                <li><a href="/wm/shopping/">积分兑换</a></li>
+                <li><a href="/wm/aboutus/">关于我们</a></li>
+                <% if (current_user){%>
+                    <%if(current_user.userRole >= config.UserRole.SERVICE_USER){%>
+                        <li><a href="/cms/users/allUser" class="allact" title="<%=current_user.userName%> 进入管理后台">管理后台</a></li>
+                    <%}else{%>
+                        <li><a href="/signin" class="allact" title="<%=current_user.userName%> 进入个人中心">个人中心</a></li>
+                    <%}%>
+                    
+                <%}else{%>
+                    <li><a href="/signin" class="allact">用户登录</a></li>
+                    <li><a href="/signup">用户注册</a></li>
+                <%}%>                
+            </ul>
+        </div>
+    </div>
+</div>

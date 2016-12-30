@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>会员中心 -网盟测试站</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<link rel="canonical" href="http://">
+<link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="css/app.min.css">
+<link rel="stylesheet" href="css/clicon.css">
+<script src="js/jquery.1.9.1.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+
+<body style="min-width:980px;">
+<div id="menu">
+  <div class="app-aside modal nav-expand">
+    <div class="navside dark dk" layout="column">
+      <div class="user_plugins_logobox dark">
+        <a href="/" class="logo_link user_nav_logo" title="首页"></a>
+      </div>
+      <ul class="nav">
+        <li class="active">
+          <a class="menuClick">
+            <span class="nav-icon">
+              <i class="clicon-qr-manage"></i>
+            </span>
+            <span class="nav-text">会员管理</span>
+          </a>
+          <ul class="nav-sub nav-mega nav-mega-3">
+            <li class="active">
+              <a href="#">
+                <span class="nav-text">会员主页</span></a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="nav-text">个人信息</span></a>
+            </li>
+            <li> 
+              <a href="#">
+                <span class="nav-text">业务管理</span></a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="nav-text">终端数据</span></a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="nav-text">业务数据</span></a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="nav-text">财务信息</span></a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="nav-text">积分信息</span></a>
+            </li>
+          </ul>
+        </li>
+        
+        <li>
+          <a href="#" ><span class="user_plugins_nav_text">帮助中心</span></a>
+        </li>
+
+      </ul>
+
+      <div class="user_plugins_footer">
+        <div class="service_tip" style="display: none;">
+          <div class="service_tip_arrow"></div>
+          <div class="service_tip_inner">问题解答，操作指南，业务咨询
+            <br>任何问题都可以找我解决。
+          </div>
+        </div>
+
+        <a href="javascript:;" class="user_plugins_footer_service" id="user_plugins_qqservice">
+          <span class="user_plugins_service_logo" id="user_plugins_service_logo" style="background-position: 0px 0px;"></span>
+          <div class="user_plugins_service_rightbox">
+            <span class="user_plugins_service_text">您的专属客服</span>
+            <span class="user_plugins_service_status">
+              <i class="fa fa-circle online" id="service_status_icon"></i>
+              <span id="service_status_text">客服安安</span>
+            </span>
+          </div>
+        </a>
+
+        <div class="user_plugins_service_tel">
+          <i class="fa fa-phone"></i>
+          <span id="service_status_text">咨询热线: 4000554155</span>
+        </div>
+      </div>
+
+    </div>
+    <div flex="" class="hide-scroll">
+      <nav class="scroll nav-stacked nav-active-success"></nav>
+    </div>
+  </div>
+
+  <div class="user_plugins_head">
+
+    <div class="user_plugins_head_main">
+      <div class="user_plugins_head_title fl">
+        <span class="domain_title" id="domain_title">会员主页</span></div>
+
+      <div class="user_plugins_user_info fr">
+        <a href="/" class="user_info_link transit">网站首页</a>
+        <div class="user_name_box" id="user_name_box">
+          <div class="user_name">
+            <i class="clicon-user-o-block"></i>显示用户名
+            <div class="user_plugins_arrow_box" style="display: none; opacity: 0; transform: scale(0.8);" id="user_plugins_arrow_box">
+              <a href="http://user.cli.im/password/edit" class="user_plugins_arrow_link">修改密码</a>
+              <a href="http://user.cli.im/login/out" class="user_plugins_arrow_link">安全退出</a></div>
+          </div>
+          <div class="user_plugins_head_arrow">
+            <div class="user_plugins_head_arrow_up"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="user_plugins_loading" id="user_plugins_loading">
+      <img src="http://static.clewm.net/cli/images/user/userclickloading.gif">
+      <span class="user_plugins_loading_prompt" id="user_plugins_loading_prompt">正在处理，请稍后</span>
+    </div>
+
+  </div>
+</div>
+<link href="css/user_nav_plugins_v2.css" rel="stylesheet" />
+
+<div class="user_plugins_wraper">
+
+<div class="page_wrapper">
+
+  <!--昨日数据展示部分-->
+  <div class="row scan_box">
+    
+    <div class="col-xs-12 col-sm-3">
+      <div class="box p-a">
+        <div class="pull-left m-r">
+          <a href="#">
+            <span class="w-48 rounded teal">终端IP</span>
+          </a>
+        </div>
+        <div class="clear">
+          <h4 class="m-a-0 text-lg">
+            <a href="#"><span class="text-sm">昨日IP统计</span>0<span class="text-sm">个</span></a>
+          </h4>
+          <small class="text-grey">昨日终端统计</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <div class="box p-a">
+        <div class="pull-left m-r">
+          <a href="#">
+            <span class="w-48 rounded teal">终端PC</span>
+          </a>
+        </div>
+        <div class="clear">
+          <h4 class="m-a-0 text-lg">
+            <a href="#"><span class="text-sm">昨日PC统计</span>0<span class="text-sm">台</span></a>
+          </h4>
+          <small class="text-grey">昨日终端统计</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <div class="box p-a">
+        <div class="pull-left m-r">
+          <a href="#">
+            <span class="w-48 rounded teal">单机产值</span>
+          </a>
+        </div>
+        <div class="clear">
+          <h4 class="m-a-0 text-lg">
+            <a href="#"><span class="text-sm">昨日终端单机产值</span>0<span class="text-sm">元</span></a>
+          </h4>
+          <small class="text-grey">昨日终端统计</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <div class="box p-a">
+        <div class="pull-left m-r">
+          <a href="#">
+            <span class="w-48 rounded teal">昨日收益</span>
+          </a>
+        </div>
+        <div class="clear">
+          <h4 class="m-a-0 text-lg">
+            <a href="#"><span class="text-sm">昨日收益</span>0<span class="text-sm">元</span></a>
+          </h4>
+          <small class="text-grey">昨日终端统计</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--用户信息部分-->
+  <div class="row info_box">
+    <div class="col-sm-12 col-md-12">
+      <div class="box info">
+        <div class="box-header">
+          <h3>账户信息</h3>
+        </div>
+        <div class="box-body">
+          <a class="pull-left m-r"><img src="images/user.png" class="img-circle w-56" /></a> 
+          <div class="clear">
+            <div class="col-md-3 col-sm-6">
+              <div class="mn-box"> 
+                <p class="text-lgrey">账户名称：<span>显示用户名</span></p>
+                <a href="#" class="btn btn-sm btn-rounded btn-info m-t-xs">个人信息</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-sm btn-rounded btn-info m-t-xs">提现记录</a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="mn-box"> 
+                <p class="text-lgrey">历史共支付：</p>
+                <p class="bigfont text-red">50.09元</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="mn-box">
+                <p class="text-lgrey">可结算金额：</p>
+                <p class="bigfont">48.49元</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="mn-box">           
+                <p class="text-lgrey">未结算金额：</p>
+                <p class="bigfont">11.30元</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--最新公告部分-->
+  <div class="row notice_box">
+    <div class="col-md-12 col-sm-12">
+      <div class="box">
+
+        <div class="box-header">
+          <h3>最新公告<a href="#" class="btn btn-sm white notice_more">更多</a></h3>
+        </div>
+
+        <table class="table">
+          <tr class="notice_list">
+            <td><a href="#" target="_blank">360极速浏览器业务计费通知</a></td>
+            <td class="notice_time">2016-11-28 14:54:43</td>
+          </tr>
+          <tr class="notice_list">
+            <td><a href="#" target="_blank">360极速浏览器业务计费通知</a></td>
+            <td class="notice_time">2016-11-28 14:54:43</td>
+          </tr>
+          <tr class="notice_list">
+            <td><a href="#" target="_blank">360极速浏览器业务计费通知</a></td>
+            <td class="notice_time">2016-11-28 14:54:43</td>
+          </tr>
+          <tr class="notice_list">
+            <td><a href="#" target="_blank">360极速浏览器业务计费通知</a></td>
+            <td class="notice_time">2016-11-28 14:54:43</td>
+          </tr>
+          <tr class="notice_list">
+            <td><a href="#" target="_blank">360极速浏览器业务计费通知</a></td>
+            <td class="notice_time">2016-11-28 14:54:43</td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+  <!--首页收益展示部分，只做位置，数据留空-->
+  <div class="row history_box">
+    <div class="col-md-12 col-sm-12">
+      <div class="box">
+
+        <div class="box-header">
+          <h3>近七天收益</h3>
+        </div>
+
+        <div class="box-body">
+
+          <!--基础html样式
+          <div class="js-history-tab">
+            <div class="js-history-list js-history"><div id="jschart" style="width: 100%; " class="slider"></div>
+            <div class="js-table"><div id="moneylist"  style="width: 100%;height:400px " ></div></div>
+          </div>
+          <script src="js/Highcharts-4.1.5/js/highcharts.js" type="text/javascript"></script>
+          <script src="js/Highcharts-4.1.5/js/modules/exporting.js" type="text/javascript"></script>
+
+          -->
+
+          <!--模拟数据开始-->
+          <div class="js-history-tab">
+            <div class="js-history-list js-history"><div id="jschart" style="width: 100%; " class="slider"></div>
+            <div class="js-table"><div id="moneylist"  style="width: 100%;height:400px " ></div></div>
+          </div>
+          
+          <script type="text/javascript">
+          $(function () {
+            GetReport();
+            GetReportTB();
+          });
+
+          function GetReport() {
+            var data = {"JsonStr":"[{\"name\":\"收益波动线\", \"data\":[0.2672,0.1478,0.9804,1.1456,0.3920,0.5592,0.4200]}]","JsonStr02":"['11-25','11-26','11-27','11-28','11-29','11-30','12-01']","TableData":null,"TableData02":null,"TableData03":null,"TableData04":null,"ResultNum":1,"Message":null,"Count":0,"FileUrl":null}
+             if (data.ResultNum == 1) {
+                        ReportChart(data.JsonStr, data.JsonStr02)
+                        $("#MoneyList").html(data.FileUrl);
+
+                    } else {
+
+                        alert(data.Message);
+                    }
+
+          }
+
+          function GetReportTB() {
+            var data = {"JsonStr":"<table  width=\"100%\" class=\"table noborder-lr  table-listing border-r l-syi-tl\"><thead class=\"thead-gray\"><tr> <th>日期</th> <th>终端IP数</th><th>终端PC数</th><th>月估产值</th><th>收入</th></tr>  </thead> <tr><td>12-01</td><td>3</td><td>3</td><td>4.2000</td><td>0.4200</td> </tr> <tr><td>11-30</td><td>6</td><td>6</td><td>2.7960</td><td>0.5592</td> </tr> <tr><td>11-29</td><td>6</td><td>6</td><td>1.9590</td><td>0.3920</td> </tr> <tr><td>11-28</td><td>8</td><td>9</td><td>3.8160</td><td>1.1456</td> </tr> <tr><td>11-27</td><td>6</td><td>7</td><td>4.2000</td><td>0.9804</td> </tr> <tr><td>11-26</td><td>2</td><td>2</td><td>2.2170</td><td>0.1478</td> </tr> <tr><td>11-25</td><td>4</td><td>6</td><td>1.3350</td><td>0.2672</td> </tr> </tbody>","JsonStr02":null,"TableData":null,"TableData02":null,"TableData03":null,"TableData04":null,"ResultNum":1,"Message":null,"Count":0,"FileUrl":null}
+            if (data.ResultNum == 1) {
+
+                        $("#moneylist").html(data.JsonStr);
+
+                    } else {
+
+                        alert(data.Message);
+                    }
+
+          }
+
+          function ReportChart(JonStr, JonStr2) {
+         
+            JonStr = eval(JonStr);
+            JonStr2 = eval(JonStr2);
+            $('#jschart').highcharts({
+                title: {
+                    text: ''
+                },
+
+                xAxis: {
+                    categories: JonStr2
+                },
+                yAxis: {
+                  title: {
+                        text: '单位 (元)'
+                    },
+                        min: 0
+                },
+                tooltip: {
+                    headerFormat: '<b>{point.x}号收益</b><br />',
+                    pointFormat: '{point.y}元'
+                  
+                }, 
+
+                legend: {
+                    align: 'center', //水平方向位置
+                    verticalAlign: 'top'
+                   
+                },
+
+                series: JonStr
+            });
+
+       
+
+        }
+
+
+          </script>
+           
+          
+
+          <script src="js/Highcharts-4.1.5/js/highcharts.js" type="text/javascript"></script>
+          <script src="js/Highcharts-4.1.5/js/modules/exporting.js" type="text/javascript"></script>
+          <!--模拟数据结束-->
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+</div>
+</div>
+<link href="css/page_center.css" rel="stylesheet" />
+
+<script src="js/usrmain.js"></script>
+</body>
+</html>

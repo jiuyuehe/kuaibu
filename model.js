@@ -1,0 +1,1 @@
+sequelize-gen -o "./models" -d dbo -h localhost -u root -p 33060 -x A123456 -e mysql

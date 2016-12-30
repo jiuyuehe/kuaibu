@@ -1,0 +1,51 @@
+.img-circle {border-radius: 50%;}
+
+
+
+/*用户中心页面中间内容*/
+.page_wrapper { padding: 20px; }
+.scan_box .box .clear h4 { line-height: 20px;}
+.scan_box .text-lg a .text-sm { margin-right: 8px; margin-left: 4px;}
+.scan_box .text-lg a .text-sm:first-child { margin-left: 0;}
+.scan_box .text-lg a .text-sm { margin-right: 8px; margin-left: 4px;}
+.text-lgrey{color: #dedede;}
+.text-lgrey span{color:#fff;}
+.mn-box{height: 100px;}
+.bigfont{font-size: 2rem;}
+.text-red{color: #CDDC39;}
+
+.notice_box .notice_more { float: right; vertical-align: middle; margin-top: -7px;}
+.notice_box table {font-size: 14px; margin-bottom: 0;}
+.notice_box .notice_list:first-child { border-top: 0;}
+.notice_box .notice_list td { border-top: 0;}
+.notice_box .notice_list .notice_time { float: right; opacity: .6; filter: alpha(opacity=60);}
+
+.slider {background: #fff url(../images/loading.gif) center center no-repeat; overflow: hidden; position: relative;}
+.noborder-lr { border-left: none; border-right: none;}
+.thead-gray {background-position: 0% 0%; color: #646567; background-repeat: repeat-x; -moz-box-shadow: inset 0 1px 0 #fff; -webkit-box-shadow: inset 0 1px 0 #fff;
+    box-shadow: inset 0 1px 0 #fff;background-image: linear-gradient(to bottom, #fff 0, #f2f2f2 100%); background-color: #f4f4f4; background-attachment: scroll;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

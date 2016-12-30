@@ -1,0 +1,24 @@
+<tr>
+    <td><input type="checkbox"/></td>
+    <td><a class="link" href="/user/<%=user.userName%>"  target="_blank"><%=user.userName%></a></td>
+    <td><%=user.userInfo.qq%></td>
+    <td><%=user.userInfo.phone%></td>
+    <td><%=user.realName%></td>
+    <td><%=user.status===0?'正常':'停用'%></td>
+    <td class="cususer">
+        <%if(user.masterId===null){%>
+            <%='无'%>
+        <%}else{%>
+            <%cususers.forEach(function(cususer){%>
+                <%if(cususer.id===user.masterId){%>
+                    <%=cususer.realName%>
+                <%}%>
+            <%})%>   
+        <%}%>
+    </td>
+    <td><a href='#' class="btn btn-success btn-xs cusModal" data-toggle="modal"  data-target="#cusModal">更换客服</a></td>        
+    <td  class="role"><%=user.role%></td>
+    <td><a href='#'  class="btn btn-success btn-xs roleModal" data-toggle="modal" data-target="#roleModal">更改角色</a></td>
+    <td></td>
+    <td><%=user.time%></td>
+</tr>

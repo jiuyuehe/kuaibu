@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="Zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>会员登录——快步网盟</title>
+<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="/css/login.css" nedia="screen" />
+<script type="text/javascript" src="/js/jquery.1.11.3.min.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/js/messages_zh.min.js"></script>
+<script type="text/javascript" src="/js/user.js"></script>
+</head>
+<body>
+<div class="head">
+    <div class="wrap">
+        <div class="logo"><a href="/"><img src="/images/mainlogo.png" /></a></div>
+        <div class="center">
+			<h2>用户管理系统</h2><span>用户登录</span>
+        </div>
+    </div>
+</div>
+<div class="login-main">
+	<h1>用户登录</h1>
+	<div class="login">
+		<%if(typeof(error) !== 'undefined' && error.length > 0){%>
+            <div class="alert alert-warning alert-dismissible fade in" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <strong><%=error%></strong>
+            </div>
+        <%}%>
+		<form action="/signin" method="post" >
+			<ul>
+				<li><span>用户名：</span><input type="text" name="username"></li>
+				<li><span>登录密码：</span><input type="password" name="password"></li>
+				<li><span>验证码：</span> 
+					<div class="vdcode">
+						<input id="vdcode" class="text login_from3" type="text" name="vdcode"/>
+						<img id="vdimgck" align="absmiddle" onclick="this.src='/ccap?' + new Date().getTime();" title="看不清？点击更换" src="/ccap"/>
+					</div>
+				</li>
+			</ul>
+			<button  class="btn btn-primary btn-block" type="submit">登&nbsp;录</button>
+		</form>
+	</div>
+	<div class="logfun">
+		<span class="funleft"><a>找回密码？联系客服</a></span>
+		<span class="funright">没有账号？<a href="/signup">免费注册</a></span>
+	</div>
+</div>
+</body>
+</html>
